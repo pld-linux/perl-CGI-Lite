@@ -39,14 +39,12 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install examples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf README TODO
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README TODO
 %{perl_sitelib}/CGI/Lite.pm
 %{_mandir}/man3/*
 
