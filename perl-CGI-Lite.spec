@@ -2,7 +2,7 @@
 %define	pdir	CGI
 %define	pnam	Lite
 Summary:	CGI::Lite perl module
-Summary(pl):	Modu³ perla CGI::Lite
+Summary(pl):	Modu³ Perla CGI::Lite
 Name:		perl-CGI-Lite
 Version:	2.02
 Release:	2
@@ -19,7 +19,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 CGI::Lite perl module to process and decode WWW forms and cookies.
 
 %description -l pl
-Modu³ perla CGI::Lite do przetwarzania i dekodowania formularzy WWW i
+Modu³ Perla CGI::Lite do przetwarzania i dekodowania formularzy WWW i
 cookies.
 
 %prep
