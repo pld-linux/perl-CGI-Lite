@@ -2,14 +2,14 @@
 Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
-Version:	1.8
-Release:	3
+Version:	1.9
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI_Lite-%{version}.tar.gz
-Patch0:		perl-CGI-Lite-paths.patch
-Patch1:		perl-CGI-Lite-make.patch
+Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/B/BE/BENL//CGI_Lite-%{version}.tar.gz
+Patch0:		%{name}-paths.patch
+Patch1:		%{name}-make.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.005_03-14
 %requires_eq	perl
@@ -42,7 +42,7 @@ install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI_Lite
   sed -e "s#$RPM_BUILD_ROOT##" .packlist >.packlist.new
-  mv .packlist.new .packlist
+  mv -f .packlist.new .packlist
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
