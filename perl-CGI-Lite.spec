@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	CGI
-%define		pnam	Lite
+%define	pdir	CGI
+%define	pnam	Lite
 Summary:	CGI::Lite perl module
 Summary(pl):	Modu³ perla CGI::Lite
 Name:		perl-CGI-Lite
