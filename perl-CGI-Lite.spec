@@ -8,7 +8,8 @@ Copyright:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI_Lite-%{version}.tar.gz
-Patch:		perl-CGI-Lite-paths.patch
+Patch0:		perl-CGI-Lite-paths.patch
+Patch1:		perl-CGI-Lite-make.patch
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -22,7 +23,8 @@ Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i cookies.
 
 %prep
 %setup -q -n CGI_Lite-%{version}
-%patch -p1
+%patch0 -p1
+%patch1 -p0
 
 %build
 perl Makefile.PL
