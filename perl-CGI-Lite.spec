@@ -25,7 +25,7 @@ cookies.
 %setup -q -n %{pdir}-%{pnam}-%{version}-emergencyrelease
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 find examples -type f | xargs -r perl -pi -e 's|/local/bin/perl\d*|/bin/perl|g'
 
