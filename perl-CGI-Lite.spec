@@ -3,7 +3,7 @@ Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
 Version:	2.0
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
