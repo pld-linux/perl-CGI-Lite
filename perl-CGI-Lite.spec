@@ -2,13 +2,13 @@
 Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
-Version:	1.9
-Release:	2
+Version:	2.0
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/B/BE/BENL//CGI_Lite-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/authors/id/B/BE/BENL/CGI-Lite-%{version}.tar.gz
 Patch0:		%{name}-paths.patch
 Patch1:		%{name}-make.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -25,7 +25,7 @@ Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i
 cookies.
 
 %prep
-%setup -q -n CGI_Lite-%{version}
+%setup -q -n CGI-Lite-%{version}
 %patch0 -p1
 %patch1 -p0
 
@@ -49,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc *.gz
-%{perl_sitelib}/CGI_Lite.pm
+%{perl_sitelib}/CGI/Lite.pm
 %{_mandir}/man3/*
 
 %{_examplesdir}/%{name}-%{version}

@@ -1,9 +1,9 @@
---- Makefile.PL~	Wed Mar 19 07:08:28 1997
-+++ Makefile.PL	Sat Oct  2 23:20:43 1999
-@@ -8,7 +8,6 @@
+--- Makefile.PL~        Wed Mar 19 07:08:28 1997
++++ Makefile.PL Sat Oct  2 23:20:43 1999
+@@ -7,7 +7,6 @@
+ 
  WriteMakefile (
-                  NAME      =>   "CGI_Lite",
-                  DISTNAME  =>   "CGI_Lite",
+                  NAME      =>   "CGI::Lite",
 -                 MAN3PODS  =>   ' ',  
                   VERSION   =>   "$VERSION",
                   'dist'    =>   {
