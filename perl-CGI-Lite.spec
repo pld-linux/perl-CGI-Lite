@@ -1,12 +1,11 @@
-%define	pdir	CGI
-%define	pnam	Lite
 %include	/usr/lib/rpm/macros.perl
+%define		pdir	CGI
+%define		pnam	Lite
 Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
 Version:	2.0
 Release:	5
-
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -24,7 +23,7 @@ Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i
 cookies.
 
 %prep
-%setup -q -n CGI-Lite-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 %patch0 -p0
 
 %build
