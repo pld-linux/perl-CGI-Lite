@@ -1,0 +1,56 @@
+--- CGI_Lite-1.8/examples/cookies	Fri Apr 11 09:33:20 1997
++++ CGI_Lite-1.8/examples.new/cookies	Fri Oct  1 23:19:03 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Simple example to dump all the cookies :-)
+ 
+--- CGI_Lite-1.8/examples/file	Fri Apr 11 09:34:20 1997
++++ CGI_Lite-1.8/examples.new/file	Fri Oct  1 23:19:10 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Simply displays the key/value pairs. Here is how the output
+ # would look for multipart/form-data forms:
+--- CGI_Lite-1.8/examples/get_post	Fri Apr 11 09:35:22 1997
++++ CGI_Lite-1.8/examples.new/get_post	Fri Oct  1 23:19:17 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Very much like the reference.pl example, except for the fact 
+ # that we're calling the parse_form_data in a different context;
+--- CGI_Lite-1.8/examples/post	Fri Apr 11 09:35:43 1997
++++ CGI_Lite-1.8/examples.new/post	Fri Oct  1 23:19:23 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Very much like the get_post.pl, except we're passing a request
+ # method to parse_form_data.
+--- CGI_Lite-1.8/examples/print	Fri Apr 11 09:36:41 1997
++++ CGI_Lite-1.8/examples.new/print	Fri Oct  1 23:19:29 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Example that shows the effect of wrap_textarea and create_variables.
+ # Let's assume we're getting three fields: name, bio, skills.
+--- CGI_Lite-1.8/examples/reference	Wed Mar 19 07:14:42 1997
++++ CGI_Lite-1.8/examples.new/reference	Fri Oct  1 23:19:34 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Simple example that performs the same function as the
+ # print_data method.
+--- CGI_Lite-1.8/examples/upload	Fri Apr 11 09:38:46 1997
++++ CGI_Lite-1.8/examples.new/upload	Fri Oct  1 23:19:39 1999
+@@ -1,4 +1,4 @@
+-#!/usr/local/bin/perl5
++#!/usr/bin/perl
+ 
+ # Simple example that displays the data associated with
+ # the "readme" file field in a multiform/form-data request.
