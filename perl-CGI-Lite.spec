@@ -27,7 +27,7 @@ cookies.
 
 %build
 %{__perl} Makefile.PL \
-	INSTALLDIRS=vendor 
+	INSTALLDIRS=vendor
 %{__make}
 find examples -type f | xargs -r perl -pi -e 's|/local/bin/perl\d*|/bin/perl|g'
 
