@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	CGI
 %define	pnam	Lite
-Summary:	CGI::Lite - Process and decode WWW forms and cookies
-Summary(pl):	CGI::Lite - przetwórz i zdekoduj forumlarze WWW i cookies
+Summary:	CGI::Lite - process and decode WWW forms and cookies
+Summary(pl):	CGI::Lite - przetwarzanie i dekodowanie forumlarzy WWW i cookies
 Name:		perl-CGI-Lite
 Version:	2.02
 Release:	2
@@ -21,10 +21,9 @@ file uploads, as well as cookies in a very simple manner; you need not
 concern yourself with the actual details behind the decoding process.
 
 %description -l pl
-Mo¿esz u¿ywaæ tego modu³u do dekodowania informacji z formularzy
-i zapytañ, w³±cznie z uploadem plików, a tak¿e cookies, w bardzo
-prosty sposób; nie musisz siê przejmowaæ detalami samego procesu
-dekodowania.
+Modu³ ten s³u¿y modu³u do dekodowania informacji z formularzy i
+zapytañ, w³±cznie z uploadem plików, a tak¿e cookies, w bardzo prosty
+sposób; nie trzeba siê przejmowaæ detalami samego procesu dekodowania.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
