@@ -4,12 +4,11 @@
 Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
-Version:	2.0
-Release:	5
+Version:	2.001
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-Patch0:		%{name}-make.patch
+Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}-emergencyrelease.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-16
 BuildRequires:	perl >= 5.6
 BuildArch:	noarch
@@ -23,8 +22,7 @@ Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i
 cookies.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-%{version}
-%patch0 -p0
+%setup -q -n %{pdir}-%{pnam}-%{version}-emergencyrelease
 
 %build
 perl Makefile.PL
@@ -44,8 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc README TODO
+%doc HISTORY README TODO
 %{perl_sitelib}/CGI/Lite.pm
 %{_mandir}/man3/*
-
 %{_examplesdir}/%{name}-%{version}
