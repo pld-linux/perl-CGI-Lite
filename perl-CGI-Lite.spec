@@ -1,4 +1,4 @@
-%define		perl_sitelib	%(eval "`perl -V:installsitelib`"; echo $installsitelib)
+%include	/usr/lib/rpm/macros.perl
 Summary:	CGI_Lite perl module
 Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
@@ -10,6 +10,7 @@ Group(pl):	Programowanie/Jêzyki/Perl
 Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI_Lite-%{version}.tar.gz
 Patch0:		perl-CGI-Lite-paths.patch
 Patch1:		perl-CGI-Lite-make.patch
+BuildRequires:	rpm-perlprov
 BuildRequires:	perl >= 5.005_03-10
 %requires_eq	perl
 Requires:	%{perl_sitearch}
@@ -58,5 +59,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-%dir /usr/src/examples/%{name}-%{version}
-%attr(755,root,root) /usr/src/examples/%{name}-%{version}/*
+/usr/src/examples/%{name}-%{version}
