@@ -4,10 +4,10 @@ Summary(pl):	Modu³ perla CGI_Lite
 Name:		perl-CGI-Lite
 Version:	1.8
 Release:	3
-Copyright:	GPL
+License:	GPL
 Group:		Development/Languages/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
-Source:		ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI_Lite-%{version}.tar.gz
+Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/CGI/CGI_Lite-%{version}.tar.gz
 Patch0:		perl-CGI-Lite-paths.patch
 Patch1:		perl-CGI-Lite-make.patch
 BuildRequires:	rpm-perlprov >= 3.0.3-16
@@ -20,7 +20,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 CGI_Lite perl module to process and decode WWW forms and cookies.
 
 %description -l pl
-Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i cookies.
+Modu³ perla CGI_Lite do przetwarzania i dekodowania formularzy WWW i
+cookies.
 
 %prep
 %setup -q -n CGI_Lite-%{version}
@@ -33,10 +34,10 @@ make
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install -d $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 make install DESTDIR=$RPM_BUILD_ROOT
 
-install examples/* $RPM_BUILD_ROOT/usr/src/examples/%{name}-%{version}
+install examples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 
 (
   cd $RPM_BUILD_ROOT%{perl_sitearch}/auto/CGI_Lite
@@ -59,4 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %{_mandir}/man3/*
 
-/usr/src/examples/%{name}-%{version}
+%{_prefix}/src/examples/%{name}-%{version}
