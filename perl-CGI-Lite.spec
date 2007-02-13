@@ -2,7 +2,7 @@
 %define		pdir	CGI
 %define		pnam	Lite
 Summary:	CGI::Lite - process and decode WWW forms and cookies
-Summary(pl.UTF-8):   CGI::Lite - przetwarzanie i dekodowanie forumularzy WWW i cookies
+Summary(pl.UTF-8):	CGI::Lite - przetwarzanie i dekodowanie forumularzy WWW i cookies
 Name:		perl-CGI-Lite
 Version:	2.02
 Release:	2
