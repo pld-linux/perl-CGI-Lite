@@ -5,7 +5,7 @@ Summary:	CGI::Lite - process and decode WWW forms and cookies
 Summary(pl.UTF-8):	CGI::Lite - przetwarzanie i dekodowanie forumularzy WWW i cookies
 Name:		perl-CGI-Lite
 Version:	2.02
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
